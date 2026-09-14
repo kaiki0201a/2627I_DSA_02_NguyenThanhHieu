@@ -1,16 +1,16 @@
 /*
 Ý tưởng:
-- Ngay sau khi tìm gốc cho p, lấy tất cả các nút trên đường đi trỏ trực tiếp đến root
+- Ngay sau khi tìm gốc cho p, nối gốc đến ông nội của nó
  */
-public class Path_Compression{
+public class Path_Halving {
     private int[] id;
-    public Path_Compression(int N){
+    public Path_Halving(int N){
         id = new int[N];
     }
 
     private int root(int i){
         while (i != id[i]){
-            id[i] = id[id[i]]; // Path compression
+            id[i] = id[id[i]]; // Path Halving
             i = id[i];
         }
         return i;
