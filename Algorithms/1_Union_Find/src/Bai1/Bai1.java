@@ -1,9 +1,11 @@
+/*
 public void union(int p, int q) {
     for (int i = 0; i < leader.length; i++){
         if (leader[i] == leader[p])
-            leader[i] = leader[q]
+            leader[i] = leader[q];
     }
 }
+*/
 
 /*
 - Vấn đề: không lưu lại giá trị của leader[p]

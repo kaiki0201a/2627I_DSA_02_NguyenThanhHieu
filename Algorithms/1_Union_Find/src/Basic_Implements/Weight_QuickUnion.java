@@ -31,7 +31,7 @@ public class Weight_QuickUnion{
         if (i == j) return;
         if (sz[i] >= sz[j]){
             id[j] = i;
-            sz[i] += sz[j]
+            sz[i] += sz[j];
         } else {
             id[i] = j;
             sz[j] += sz[i];
