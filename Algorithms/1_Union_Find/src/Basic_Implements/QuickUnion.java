@@ -1,3 +1,5 @@
+package Basic_Implements;
+
 // Diem khac so voi QuickFind: lazy, chi tinh root khi can
 public class QuickUnion {
     private int[] id;

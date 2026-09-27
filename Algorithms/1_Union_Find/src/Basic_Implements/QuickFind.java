@@ -1,3 +1,5 @@
+package Basic_Implements;
+
 public class QuickFind
 {
     private int[] id;

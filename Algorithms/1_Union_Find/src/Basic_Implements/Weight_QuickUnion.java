@@ -1,3 +1,5 @@
+package Basic_Implements;
+
 // Weight: co them thuoc tinh sz; khi gop se danh gia sz; noi cay be vao cay lon
 // Lưu ý: cài đặt weighted quick-union cho union(p,q) của chúng ta sẽ thay đổi parent[q] nếu hai cây có cùng kích thước.)
 

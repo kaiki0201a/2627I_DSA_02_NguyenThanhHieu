@@ -1,7 +1,16 @@
-public class ThreeSum {
+package BT_TH;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
+
+import java.util.Arrays;
+
+public class Bai1_2 {
 
     // Do not instantiate.
-    private ThreeSum() { }
+    private Bai1_2() {
+    }
 
     /**
      * Prints to standard output the (i, j, k) with {@code i < j < k}
@@ -12,15 +21,15 @@ public class ThreeSum {
     public static void printAll(int[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < n; j++) {
-                """ Sửa ở đây
+            for (int j = i + 1; j < n; j++) {
+                /* Sửa ở đây
                         
                 for (int k = j+1; k < n; k++) {
                     if (a[i] + a[j] + a[k] == 0) {
                         StdOut.println(a[i] + " " + a[j] + " " + a[k]);
                     }
                 }
-                """
+                */
                 int k = Arrays.binarySearch(a, -(a[i] + a[j]));
                 if (k > j) StdOut.println(a[i] + " " + a[j] + " " + a[k]);
             }
@@ -31,30 +40,22 @@ public class ThreeSum {
      * Returns the number of triples (i, j, k) with {@code i < j < k}
      * such that {@code a[i] + a[j] + a[k] == 0}.
      *
-     * @param  a the array of integers
+     * @param a the array of integers
      * @return the number of triples (i, j, k) with {@code i < j < k}
-     *         such that {@code a[i] + a[j] + a[k] == 0}
+     * such that {@code a[i] + a[j] + a[k] == 0}
      */
     public static int count(int[] a) {
         int n = a.length;
         int count = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 int k = Arrays.binarySearch(a, -(a[i] + a[j]));
                 if (k > j) StdOut.println(a[i] + " " + a[j] + " " + a[k]);
-                }
             }
         }
+
         return count;
     }
-
-    /**
-     * Reads in a sequence of integers from a file, specified as a command-line argument;
-     * counts the number of triples sum to exactly zero; prints out the time to perform
-     * the computation.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(String[] args)  {
         In in = new In(args[0]);
         int[] a = in.readAllInts();
