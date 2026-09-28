@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/1_Union_Find/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/2_AlgorithmAnalysis/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/2_AlgorithmAnalysis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/3_Stack_Queue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithms/4_Sorting" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
