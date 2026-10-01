@@ -1,10 +1,15 @@
-package BT_TH;
+
+/*
+Ý tưởng:
+    - Gặp ngoặc mở: thêm vào stack
+    - Gặp ngoặc đóng: so sánh với first, nếu trùng thì xoá không thì return NO
+ */
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Bai2_Balanced_Brackets {
+public class Balanced_Brackets {
     public static String isBalanced(String s) {
         Stack<Character> st = new Stack<>();
         int length = s.length();
