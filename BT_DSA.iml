@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/2_AlgorithmAnalysis/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/3_Stack_Queue/BT_TH" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4_Sorting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0_LinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_MergeSort_QuickSort" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
