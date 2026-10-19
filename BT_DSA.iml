@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/4_Sorting" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0_LinkedList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_MergeSort_QuickSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_PriorityQueue" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
