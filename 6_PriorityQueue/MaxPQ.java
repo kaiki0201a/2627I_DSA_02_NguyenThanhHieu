@@ -15,7 +15,7 @@ public class MaxPQ{
 
     }
     public int delMax(){
-
+return 0;
     }
     private void swim(int k){   // swim tu index k
 
