@@ -1,6 +1,8 @@
 // Kiem tra ngoac hop le vi du (){}
 // Y tuong: ngoac mo -> push; ngoac dong: kiem tra va pop
 
+import java.util.Stack;
+
 public class LC_20_Valid_Parentheses {
     public boolean isValid(String s){
         Stack<Character> st = new Stack<>();

@@ -1,4 +1,6 @@
-import BT_TH.Queue;
+import edu.princeton.cs.algs4.Queue;
+
+import java.util.Stack;
 
 public class BinarySearchTree {
     class Node {
@@ -142,7 +144,8 @@ public class BinarySearchTree {
 
     // BFS
     void level_order(Node node){
-        Queue<Node> queue = new Queue<>();
+        Queue<Node> queue = new Queue<>() {
+        };
         queue.enqueue(node);
 
         while (!queue.isEmpty()){
