@@ -1,4 +1,3 @@
-package BT_TH;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
