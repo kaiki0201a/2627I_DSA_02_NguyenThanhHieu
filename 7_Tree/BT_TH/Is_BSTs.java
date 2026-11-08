@@ -2,7 +2,7 @@ package BT_TH;
 
 import java.util.*;
 
-public class Tree {
+class Tree {
     // List of node data values:
     Vector<Integer> values;
     // Total number of nodes in the tree:
@@ -34,8 +34,27 @@ public class Tree {
             Node right;
          }
     */
-    boolean checkBST(Node root) {
+    void inOrder2(Node root, List<Integer> arr){
+        if (root == null)
+            return;
 
+        inOrder2(root.left, arr);
+        arr.add(root.data);
+        inOrder2(root.right, arr);
+
+    }
+
+    boolean checkBST(Node root) {
+        List<Integer> arr = new ArrayList<>();
+        inOrder2(root, arr);
+
+        for (int i = 1; i < arr.size(); i++){
+            if (arr.get(i-1) >= arr.get(i)){
+                return false;
+            }
+        }
+
+        return true;
     }
 
     void inOrder (Node root, int levels) {

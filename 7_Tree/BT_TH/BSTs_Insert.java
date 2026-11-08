@@ -2,19 +2,6 @@ package BT_TH;
 
 import java.util.*;
 import java.io.*;
-
-class Node {
-    Node left;
-    Node right;
-    int data;
-
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-}
-
 class BSTs_Insert {
 
     public static void preOrder( Node root ) {
@@ -22,7 +9,7 @@ class BSTs_Insert {
         if( root == null)
             return;
 
-        System.out.print(root.data + " ");
+        System.out.print(root.val + " ");
         preOrder(root.left);
         preOrder(root.right);
 
@@ -41,7 +28,7 @@ class BSTs_Insert {
             return new Node(data);
         }
 
-        if (root.data > data){
+        if (root.val > data){
             root.left = insert(root.left, data);
         } else
             root.right = insert(root.right, data);

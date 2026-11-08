@@ -13,9 +13,9 @@ class Solution {
     public static Node lca(Node root, int v1, int v2) {
         // Write your code here.
         while (root != null){
-            if (root.data > v1 && root.data > v2){
+            if (root.val > v1 && root.val > v2){
                 root = root.left;
-            } else if (root.data < v1 && root.data < v2){
+            } else if (root.val < v1 && root.val < v2){
                 root = root.right;
             } else{
                 break;
@@ -30,7 +30,7 @@ class Solution {
             return new Node(data);
         } else {
             Node cur;
-            if(data <= root.data) {
+            if(data <= root.val) {
                 cur = insert(root.left, data);
                 root.left = cur;
             } else {
@@ -53,6 +53,6 @@ class Solution {
         int v2 = scan.nextInt();
         scan.close();
         Node ans = lca(root,v1,v2);
-        System.out.println(ans.data);
+        System.out.println(ans.val);
     }
 }
