@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/5_MergeSort_QuickSort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/6_PriorityQueue" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/7_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_SubproblemApproach" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
