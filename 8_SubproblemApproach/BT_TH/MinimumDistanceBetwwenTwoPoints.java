@@ -18,7 +18,7 @@ public class MinimumDistanceBetwwenTwoPoints {
         return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
     }
 
-    // Brute force for smal cases
+    // Brute force for smal cases as base case of recursive
     static double bruteForce(List<Point> pts){
         double min = Double.MAX_VALUE;
 
@@ -43,7 +43,7 @@ public class MinimumDistanceBetwwenTwoPoints {
         strip.sort(Comparator.comparingDouble(p -> p.y));
 
         for (int i = 0; i < strip.size(); i++){
-            for (int j = i + 1; i < strip.size() && (strip.get(j).y - strip.get(i).y) < min; j++){
+            for (int j = i + 1; j < strip.size() && (strip.get(j).y - strip.get(i).y) < min; j++){
                 min = Math.min(min, dist(strip.get(i), strip.get(j)));
             }
         }
